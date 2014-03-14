@@ -14,18 +14,37 @@ still slowing down responses.
 
 ## install
 
-    cd json-server; npm install; cd ..
-    cd web; bower install; cd ..
-    npm install
+    // after cloning this repo into local folder
+    npm init
+
+Installs json-server's dependencies, angular front-end dependencies,
+and fake data generator.
 
 ## start demo
 
     npm start
 
 This should start the `json-server`, then start simple http server inside the `web`
-folder, then open the browser. Try scrolling to the bottom.
+folder, then open the browser. Try scrolling to the bottom. If the server does not
+start automatically, open browser at `http://127.0.0.1:8080/`.
 
 See [package.json](package.json) for details.
+
+## details
+
+You can check individual mock data by running from command line
+
+    curl http://localhost:3000/people/slice/0/5
+
+Notice each request takes 1 seconds. This is because inside [json-server/server.js](json-server/server.js#L26)
+there is middleware to slow down requests with `slice` in their urls
+
+```js
+app.use(slow({
+    url: /slice/i,
+    delay: 1000
+}));
+```
 
 ## Small print
 
