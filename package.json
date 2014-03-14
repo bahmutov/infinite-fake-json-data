@@ -1,0 +1,35 @@
+{
+  "name": "infinite-fake-json-data",
+  "version": "0.0.0",
+  "description": "Example serving fake json data with intentional slowness",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run json & npm run web",
+    "json": "node json-server/bin/cli.js -f web/people.js",
+    "web": "cd web; node ../node_modules/http-server/bin/http-server -c-1 -o"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bahmutov/infinite-fake-json-data.git"
+  },
+  "keywords": [
+    "fake",
+    "server",
+    "json",
+    "data",
+    "infinite",
+    "scroll",
+    "angular"
+  ],
+  "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bahmutov/infinite-fake-json-data/issues"
+  },
+  "homepage": "https://github.com/bahmutov/infinite-fake-json-data",
+  "dependencies": {
+    "casual": "^1.4.5",
+    "http-server": "^0.6.1"
+  }
+}

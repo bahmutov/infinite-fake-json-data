@@ -12,6 +12,21 @@ For an alternative all in browser solution see
 that uses mock backend and works without a server, while
 still slowing down responses.
 
+## install
+
+    cd json-server; npm install; cd ..
+    cd web; bower install; cd ..
+    npm install
+
+## start demo
+
+    npm start
+
+This should start the `json-server`, then start simple http server inside the `web`
+folder, then open the browser. Try scrolling to the bottom.
+
+See [package.json](package.json) for details.
+
 ## Small print
 
 Author: Gleb Bahmutov &copy; 2014

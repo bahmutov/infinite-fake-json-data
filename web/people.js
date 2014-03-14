@@ -1,4 +1,3 @@
-require('console.json');
 var casual = require('casual');
 
 casual.define('user', function() {
@@ -18,6 +17,5 @@ exports.run = function () {
   }
 
   console.log('Have', data.people.length, 'person list');
-  // console.json(data);
   return data;
 };
