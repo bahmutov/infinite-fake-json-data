@@ -14,8 +14,9 @@ still slowing down responses.
 
 ## install
 
-    // after cloning this repo into local folder
-    npm init
+    git clone git@github.com:bahmutov/infinite-fake-json-data.git
+    cd infinite-fake-json-data
+    npm run setup
 
 Installs json-server's dependencies, angular front-end dependencies,
 and fake data generator.

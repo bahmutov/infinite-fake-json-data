@@ -4,7 +4,7 @@
   "description": "Example serving fake json data with intentional slowness",
   "main": "index.js",
   "scripts": {
-    "init": "npm run install-web; npm run install-json",
+    "setup": "npm run install-web; npm run install-json",
     "install-web": "cd web; bower install; cd ..; npm install",
     "install-json": "cd json-server; npm install; cd ..",
     "start": "npm run json & npm run web",
