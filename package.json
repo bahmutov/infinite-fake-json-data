@@ -31,7 +31,7 @@
   },
   "homepage": "https://github.com/bahmutov/infinite-fake-json-data",
   "dependencies": {
-    "casual": "^1.4.5",
-    "http-server": "^0.6.1"
+    "casual": "1.4.6",
+    "http-server": "0.7.4"
   }
 }
